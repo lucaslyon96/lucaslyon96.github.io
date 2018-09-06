@@ -331,20 +331,8 @@ input, textarea{
 width: 474px;
 padding: 10px;
 }
-.text {
+.enviar input {
 background-color: black;
-height: 40px;
-width: 150px;
-font-weight: bold;
-border-radius: 5px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border: 1px solid;
-color: black;
-cursor: pointer;
-}
-.enviar input{
-background: black;
 height: 40px;
 width: 150px;
 font-weight: bold;
@@ -354,6 +342,9 @@ border-radius: 5px;
 border: 1px solid;
 color: white;
 cursor: pointer;
+}
+.enviar input:hover{
+background: black;
 }
 textarea {
 width: 474px;
