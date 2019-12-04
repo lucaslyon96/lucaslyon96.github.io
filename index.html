@@ -1,341 +1,938 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lucas Lyon - Data Scientist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-<head>
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
-    <title>Lucas Lyon - Home</title>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <script src="https://use.fontawesome.com/d99eda13b9.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<h1 id="colorlib-logo" href="index.html"><a>Lucas Lyon</a></h1>
+				<span class="position"><a href="#">Data Scientist</a></span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="main-header__nav-item">
+						  <div class="switch">
+						    <input class="switch__input" type="checkbox" id="themeSwitch">
+						    <label aria-hidden="true" class="switch__label" for="themeSwitch">Dark mode</label>
+						    <div aria-hidden="true" class="switch__marker"></div>
+						  </div>
+						</li>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<!--<li><a href="#" data-nav-section="services">Services</a></li>-->
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="blog">Blog</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+						
+					</ul>
+				</div>
+			</nav>
 
-</head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-microchip"></i> <span class="light">Lucas</span> LYON
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#topo">Home</a>
-                        </li>
-                        <li>
-                            <a href="projects.html">Projects</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-
-        <!-- Intro Header -->
-        <header id="topo" class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading">Hello World!</h1>
-                            <p class="intro-text">
-                                <div class="row">
-                                    <div class="col-lg-offset-5 col-lg-2 col-md-offset-4 col-md-4 col-sd-offset-4 col-sd-4 col-xs-offset-2 col-xs-8">
-                                       <img class="img-responsive" src="img/robot.png"><br>
-                                    </div>
-                                </div>
-
-                            </p>
-                            <a href="#about" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- About Section -->
-        <section id="about" class="container content-section text-center">
-        <div class="col-lg-offset-2 col-lg-8">
-            <div class="row">
-                <p style="text-align: justify;">This is my portfolio, here you can know more about me, what I did in my career, what I like to do and other things. This portfolio was made with projects in Data science and analytics</p>
-                <META NAME="ROBOT" CONTENT="Index,Follow,TI, IT, Tecnology, tecnologia,Lucas, computer, trainee, python, portfolio, portfólio, data science, ciência de dados, cientista de dados, inteligencia ,artificial, artificial intelligencia, intelligencia, AI, IA, CPLEX, Computação" >
-            </div>
-        </div>
-            	<!--<div class="row">-->
-                	<div class="col-lg-offset-2 col-lg-8">
-                    	<h2>About me</h2>
-	                     <p style="text-align: justify;">
-	                         I was born in São Paulo and when I was 18 years old I moved alone to Natal, where I did my undergraduation and started my computer engineering career. There I discovered a passion in Python, Artificial Intelligence and Data Science. <br> 
-	                    </p>
-	                    <br>
-	                    <br>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-lg-4">
-	                    <img src="img/personal/me.jpg" class="img-responsive img-circle" alt="">
-	                </div>
-	                <div class="col-lg-offset-1 col-lg-7">
-	                    <br>
-	                    <h3 style="text-align: left;"><i class="fa fa-user-o" aria-hidden="true"></i> General Information</h3>
-	                    <p style="text-align: left;">
-	                        Name: Lucas Lyon de Azevedo<br>
-	                        Nationality: Brazilian<br>
-	                        Phone:  +55 (11) 9 8498-1127<br>
-	                        E-Mail: lucas.lyon96@gmail.com<br>
-	                    </p>
-	                    <h3 style="text-align: left;"><i class="fa fa-university" aria-hidden="true"></i> Education</h3>
-	                    <p style="text-align: justify;">
-	                        2019 - Federal University of Rio Grande do Norte, Natal-RN — Graduating in Computer Engineering<br> 
-	                        2018 - Data scinece carrer - Course in Data Camp
-	                        2017 - Federal University of Rio Grande do Norte, Natal-RN — Graduating in Science Technology<br> 
-	                        
-	                        
-	                    </p>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-lg-12">
-	                    <h3 style="text-align: left;"><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h3>
-	                    <p style="text-align: justify;">
-							2019 - Kapputo, Belo Horizonte - MG — Data Scientist <br>
-							Work with prediction, classification and data. Combine statistical and machone learning techniques using Python.
-							MongoDB using rails and pymongo. 
-							<br>
-
-
-	                        2018 - Aeronautics Command - Centro de Lançamento da Barreira do Inferno, Natal-RN — Internship <br>
-							Communication with beaglebone to VANT, communication with raspberry pi, development in Arduino, Implementation of a joystick for the airplanes and developed a software to interface with the pilot and the airplanes.<br>
-
-							
-	                        2017 - Junior enterprise ( INCLUDE Engenharia), Natal-RN — Assessor of marketing<br>
-							Worked with marketing in a company, development network in a house, increment the WI-FI and studying the strategy of marketing. <br>
-
-	                        2017 - Project Engineer at car-Kará as Electrical engineer<br>
-	                        Worked with a racer car on electronics, where we made all electronics of a car! <br>
-	                        
-	                        2016 - MIG - Makers Integration Grup<br>
-	                        In this group I started learning about Arduino and logical programmation, we made a piano with Arduino, we made a remote car and others projects to understand how the Arduino works!<br>
-	                 
-	                    </p>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-lg-12">
-	                    <h3 style="text-align: left;"><i class="fa fa-star" aria-hidden="true"></i> Projects and Courses</h3>
-	                    <p style="text-align: justify;">
-	                        2018 - Data scientist with python — course from DataCamp<br> 
-	                            A Data Scientist combines statistical and machine learning techniques with Python programming to analyze and interpret complex data.<br>
-	                        2017 - Scientific research — Research in optimization <br>
-	                            An algorithm based on formulation spaces as an alternative method for the Heterogeneous Clustering Problem. <br>                        
-	                    </p>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-lg-12">
-	                    <h3 style="text-align: left;"><i class="fa fa-coffee" aria-hidden="true"></i> Skills</h3>
-	                    <ul style="text-align: left">
-	                    <h4>Data Science </h4>   
-	                        <li>Python</li>
-	                        <li>Machine learning</li>
-	                        <li>Scikit-learn</li>
-	                        <li>Keras</li>
-	                        <li>Pandas</li>
-	                        <li>Numpy</li>
-	                    	<br>
-	                    <h4>Analytics</h4>
-	                     	<li>Matplotlib</li>
-	                     	<li>Plotly</li>
-	                     	<li>Bokeh</li>
-	                     	<li>Seaborn</li>
-	                    	<br>
-	                    <h4>Big Data</h4>
-	                    	<li>SQL</li>
-	                    	<li>MongoDB (Python)</li>
-	                    	<br>
-	                    <h4>Programming</h4>
-	                    	<li>Python</li>
-	                    	<li>C</li>
-	                    	<li>C++</li>
-	                        <li>Optimization (CPLEX, AMPL)</li>
-	                        <li>SQL</li>
-	                        <li>Linux</li>
-	                        <li>GitHub </li>
-	                 		<br>
-	                    <h4>Statistic</h4>
-	                    	<li>Probability</li>
-	                    	<li>Data Mining </li>
-	                    	<li>Visualization </li>
-	                    	<li>Random Forest</li>
-	                    	<li>Linear Regression</li>
-	                    	<br>
-	                    <h4>Person Skill</h4>
-	                    	<li>Leadership</li>
-	                        <li>Good relationship with the client</li>
-	                        <li>Proactive</li>
-	                        <br>
-	                    <h4>Web develop</h4>
-	                    	<li>HTML5</li>
-	                    	<li>CSS3</li>
-	                    	<li>JavaScript (basic)</li>
-	                    	<br>
-	                    <!--
-	                    <p style="text-align: justify;">
-	                        - Python<br>
-	                        - Artificial Intelligence Development in Python<br>
-	                        - Data Science Development in Python<br>
-	                        - C++<br>
-	                        - Arduino<br>
-	                        - Java<br>
-	                        - Optimization (CPLEX, AMPL)<br>
-	                        - MySQL (SQL)<br>
-	                        - Scilab<br>
-	                        - Android Development<br>
-	                        - MatLab<br>
-	                        - Web Development (HTML, CSS, JavaScript)<br>
-	                        - Adobe Photoshop<br>
-	                        - Leadership<br>
-	                        - Good relationship with the client<br>
-	                        - Proactive<br>
-	                        - C<br>
-	                        - SAP<br>
-	                        - Linux<br>
-	                        - Networks(CISCO package tracer)<br>
-	                        - GitHub <br>
-	                        - Office package(Excel, word and powerpoint)<br>
-	                    </p>
-
-	                -->
-                	</div>
-            	</div>
-            
-
-        	</div>
-        		<br>
-        		<br>
-                <div class="col-lg-offset-2 col-lg-8 ">
-                    <h2>Here you can see a little more about me</h2>
-                </div>
-            </div>
-            <div class="row">
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="https://lucaslyon.com" target="_blank">Lucas Lyon</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </small></p>
+				
+				<!--<ul>
+					<li><a href="https://www.facebook.com/lucas.lyon.98"><i class="icon-facebook2"></i></a></li>
+					<li><a href="https://github.com/lucaslyon96"><i class="icon-twitter2"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/lucaslyonazevedo/"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+				-->
+			</div>
+			<div class="row">
                 <div class="col-lg-offset-4 col-lg-1 col-md-offset-2 col-md-2 col-sd-3 col-xs-3">
-                   <a href="https://www.instagram.com/lucas_lyon/" target="_black"><img src="img/social/instagram.svg" class="img-responsive img-circle img-thumbnail" alt=""></a>
+                   <a href= "https://www.linkedin.com/in/lucaslyonazevedo/" target="_black"><i class="icon-linkedin2"></i></a>
                 </div>
                 <div class="col-lg-1 col-md-4 col-md-2 col-sd-3 col-xs-3">
-                    <a href="https://github.com/lucaslyon96" target="_black"><img src="img/social/github.svg" class="img-responsive img-circle img-thumbnail" alt=""></a>
+                    <a href="https://github.com/lucaslyon96" target="_black"><i class="icon-github"></i></a>
                 </div>
                 <div class="col-lg-1 col-md-4 col-md-2 col-sd-3 col-xs-3">
-                    <a href= "https://www.linkedin.com/in/lucaslyonazevedo/" target="_black"><img src="img/social/linkedin.svg" class="img-responsive img-circle img-thumbnail" alt=""></a>
+                    <a href="https://medium.com/@lucas.lyon96" target="_black"><i class="icon-study"></i></a>
+                </div>
+                <!--
+                <div class="col-lg-1 col-md-4 col-md-2 col-sd-3 col-xs-3">
+                    <a href="https://www.instagram.com/lucas_lyon/" target="_black"><i class="icon-instagram"></i> 	</a>
                 </div>
                 <div class="col-lg-1 col-md-4 col-md-2 col-sd-3 col-xs-3">
-                    <a href="https://www.facebook.com/lucas.lyon.98" target="_black"><img src="img/social/facebook.svg" class="img-responsive img-circle img-thumbnail" alt=""></a>
+                    <a href="https://www.facebook.com/lucas.lyon.98" target="_black"><i class="icon-facebook2"></i></a>
 
                 </div>
+            -->
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <br>
-<form  action="https://formspree.io/lucas.lyon96@gmail.com" method="POST">
+		</aside>
 
-<h1 style="text-align-last: center;">Contact</h1>
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>I'm Lucas Lyon</h1>
+						   					<!--<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+						   					-->
+												<p><a href="Lucas's CV.pdf" target="_blank" class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Data Scientist</h1>
+												
+												<p><a href='#portfolio' class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
 
-<p class="text" style="color:black;">
- <input type="text" name="name" placeholder="inform your name" required="required">
- </p>
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Me</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Lucas Lyon</strong> I was born in São Paulo and when I was 18 years old I moved alone to Natal, where I did my undergraduation and started my computer engineering career. There I discovered a passion in Python, Artificial Intelligence and Data Science.</p>
+										<p>I am a good data scientist, that have a lot work to do all day long, and not just for work, It's my hooby too! </p>
 
-<p class="text" style="color:black;">
- <input type="email" name="email" placeholder="inform your email" required="required">
- </p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Data Science</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Machine Learning</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Data Base</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Statistic</h3>
+									</div>
+								</div>
+							</div>
+							<!--
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I am happy to know you <br>that 10+ projects done sucessfully!</h2>
+										<a href="#" class="btn-hire">Hire me</a>
+									</div>
+								</div>
+							</div>
+						-->
+						</div>
+					</div>
+				</div>
+			</section>
 
-<p class="text" style="color:black;">
- <input type="text" name="subject" placeholder="inform the subject" required="required">
- </p>
 
-<p class="text" style="color:black;">
- <textarea name="message" placeholder="write your message"></textarea>
- </p>
-<br>
+			<!--
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="icon-bulb"></i>
+								</span>
+								<div class="desc">
+									<h3>Innovative Ideas</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-4">
+								<span class="icon">
+									<i class="icon-layers2"></i>
+								</span>
+								<div class="desc">
+									<h3>Graphic Design</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-5">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			-->
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="54" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of tea</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="22" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="80" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Commits</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="35" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Read articles </span>
+						</div>
 
-<div style="text-align: center;" class="enviar">
- <input type="submit" name="send" value="Send" >
- </div>
+					</div>
+				</div>
+			</div>
 
-</form>
-      <!--  <section id="contact" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Send a quick message</h2>
-                    <div class="form-group">
-                      <textarea class="form-control" rows="5" id="comment"></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-offset-3 col-lg-6">
-                            <button id="btnEnviar" class="btn btn-block btn-primary">Send</button>
-                        </div>
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>With some years on experience I got some skills and I keep working it!</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Python</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
+								    <span>65%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Pandas</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:40%">
+								    <span>40%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Machine Learning</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								    <span>50%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Statistic</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:55%">
+								    <span>55%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Visualization</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:45%">
+								    <span>45%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SQL</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:40%">
+								    <span>40%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Scikit-Learn</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:35%">
+								    <span>35%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Data Mining</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-8" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
+								    <span>65%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>PyMongo</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:25%">
+								    <span>25%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Linux</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								    <span>50%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Github</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:55%">
+								    <span>55%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>MYSQL</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:35%">
+								    <span>35%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    </div>
-                </div>
-            </div>
-        </section> -->
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Data scientist carrer with python — course from DataCamp
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
 
-        <!-- Footer -->
-        <footer>
-            <div class="container text-center">
-                <p>Copyright &copy; Lucas Lyon 2018</p>
-            </div>
-        </footer>
+										      			<p1 >
 
-        <!-- jQuery -->
-        <script src="vendor/jquery/jquery.js"></script>
+										      			 A Data Scientist combines statistical and machine learning techniques with Python programming to analyze and interpret complex data. </p1>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p1>It is a course from DataCamp, where I studied at 2018.</p1>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Engineering
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p1>Far far away, Federal University of Rio Grande do Norte <strong> Natal-RN </strong>. yes I moved to far far away, but there is beatiful and wonderful. I learned how to surf and the most important, how to be a programer.</p1>
+													
+									        </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Bachelor Degree in Science Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div class="panel-body">
+									            <<p1>Far far away, Federal University of Rio Grande do Norte <strong> Natal-RN </strong>. This was my first course at UFRN, it is like a collage, where all Engineering do together.</p1>	
+									        </div>
+									    </div>
+									</div>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+									<!--
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFour">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									        <div class="panel-body">
+									            <p1>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p1>	
+									        </div>
+									    </div>
+									</div>
 
-        <!-- Plugin JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									            <p1>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p1>	
+									        </div>
+									    </div>
+									</div>
+								-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!-- Theme JavaScript -->
-        <script src="js/grayscale.min.js"></script>
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
 
-        <!-- Main JS -->
-        <script src="js/main.js" type="text/javascript"></script>
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
 
-        <!-- Parse -->
-        <script src="js/parse.js" type="text/javascript"></script>
-        <script src="js/parse-start.js" type="text/javascript"></script>
-    </body>
+					               <div class="timeline-label">
+					                  <h2><a href="#">Data Scientist at Quality</a> <p1><span>2019-Today</span></p1></h2>
+					                  <p1>São Paulo - SP<br>
+											Work with prediction, classification, clustering and data. Using checklists, answer of client, creating a lot of data, where I Combine statistical and machine learning techniques using Python to create insights.
+											</p1>
+					               </div>
+					            </div>
+					         </article>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Data Scientist at Kapputo</a> <p1><span>2019-Today</span></p1></h2>
+					                  <p1>Belo Horizonte - MG<br>
+											Work with prediction, classification and big data. Combine statistical and machine learning techniques using Python.
+											MongoDB using pymongo.</p1>
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Assessor of marketing</a> <p1><span>2018-2019</span></p1></h2>
+					                  <p1> Junior enterprise ( INCLUDE Engenharia), Natal-RN — <br>
+										Worked with marketing in a company, development network in a house, increment the WI-FI and studying the strategy of marketing. <br></p1>
+					               </div>
+					            </div>
+					         </article>
+					      	 <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					                     <div class="timeline-entry-inner">
+					                        <div class="timeline-icon color-2">
+					                           <i class="icon-pen2"></i>
+					                        </div>
+					                        <div class="timeline-label">
+					                        	<h2><a href="#">Internship  at Aeronautics Command</a> <p1><span>2018</span></p1></h2>
+					                           <p1> Centro de Lançamento da Barreira do Inferno, Natal-RN — <br>
+					         		Communication with beaglebone to VANT, communication with raspberry pi, development in Arduino, Implementation of a joystick for the airplanes and developed a software to interface with the pilot and the airplanes.</p1>
+					                        </div>
+					                     </div>
+					         </article>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-4">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Electrical engineer at car-Kará</a> <p1><span>2017</span></p1></h2>
+					                  <p1> Project Engineer <br>
+	                        			Worked with a racer car on electronics, where we made all electronics of the car! <br></p1>
+					               </div>
+					            </div>
+					         </article>
+					        <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Scientific research — Research in optimization </a> <p1><span>2017</span></p1></h2>
+					                  <p1>
+	                            An algorithm based on formulation spaces as an alternative method for the Heterogeneous Clustering Problem.</p1>
+					               </div>
+					            </div>
+					        </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">MIG - Makers Integration Grup</a> <p1><span>2016</span></p1></h2>
+					                  <p1>In this group I started learning about Arduino and logical programmation, we made a piano with Arduino, we made a remote car and others projects to understand how the Arduino works!</p1>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="work" id='portfolio'>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Portfolio</h2>
+						</div>
+					</div>
+					<!--
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
+						</div>
+					</div>
+					-->
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://github.com/lucaslyon96/Titanic-DataScience/blob/master/Titanic.ipynb" target="_blank">Titanic Data science </a></h3>
+										<span>A project to predict who is going to die in Titanic, and an analytics of data
+            about the passengers, class, age, sex, number of family ion the ship.</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://github.com/lucaslyon96/Bitcoin-analytics/blob/master/notebook.ipynb" target="_blank">Bitcoin Analytics - Data science</a></h3>
+										<span>This is a analytics of bitcoins and cryptocurrencies, the dataset is from Datacamp. You can see more about the project in Datacamp projects.</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://github.com/lucaslyon96/Game-of-thrones-Network-analytics/blob/master/notebook.ipynb" target="_blank">Game of thrones - Data science </a></h3>
+										<span>This is a notebook about an analytic about the books of game of thrones, who is the more important character in the book</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/img-4.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://colab.research.google.com/drive/15Z3q_FuuUyFdoDWmCQ6IjD8uExO4QBuU" target="_blank">Taxi fare Data science</a></h3>
+										<span>A project to predict how will be the price of a taxi race in New York. With the EDA and the machine learnig. In this case we have a lot of data, big data.</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-5.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://docs.google.com/presentation/d/17XsMdl3QC1jvaXRGdJDKDj5orH1dRMji55MYHRTrOQ0/edit?usp=sharing" target="_blank">E-commerce Analytics</a></h3>
+										<span>An apresentation about the analytics of brazilian e-commerce, where we find the best way to sell on internet and the best product to improve.</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-6.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://lucaslyon96.github.io/vanessalungov/" target="_blank">Vanessa Lungov's portfolio</a></h3>
+										<span>Website <br>A portfolio to a student of architecture.</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+
+			<section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April, 2019 </small> | <small> Machine Learning </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Which machine learning model to choose for my problem? - Medium</a></h3>
+									<p>SAn article to help people who are starting in data science and it is an article of consult to all data scientists.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>August, 2017 </small> | <small> Clustering </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Aplication of Scientific initiation</a></h3>
+									<p>An algorithm based on formulation spaces as an alternative method for the Heterogeneous Clustering Problem.</p>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+					-->
+					</div>
+					
+				</div>
+			</section>
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="#">lucas.lyon96@gmail.com</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>Avenida Celso Garcia, 3200 São Paulo SP Brazil</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">(11) 98498 1127</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<form action="https://formspree.io/lucas.lyon96@gmail.com" method="POST">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject">
+										</div>
+										<div class="form-group">
+											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
